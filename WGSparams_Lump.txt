@@ -1,0 +1,26 @@
+#locations
+#main directory for project
+projdir=/home/tkess/scratch/Lumpy/
+
+#sample info
+
+#genome file location
+genome=/home/tkess/scratch/Lumpy/genome/fCycLum1.pri.cur.20191011.fasta
+mitogenome=/home/tkess/scratch/Lumpy/genome/fCycLum1.MT.20191002.fasta
+
+#species
+species=$(echo Cyclopterus_lumpus)
+
+#software
+#trimming
+fastp=/home/tkess/programs/fastp
+
+#aligning
+bwamem2=/home/tkess/programs/bwa-mem2-2.0pre2_x64-linux/bwa-mem2
+
+#gatk-ing
+gatk=/home/tkess/programs/gatk-4.2.3.0/gatk
+
+#angsd - inscrutable but useful genotype likelihood tool
+angsd=/home/tkess/programs/angsd/angsd
+
