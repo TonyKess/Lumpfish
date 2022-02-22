@@ -15,10 +15,15 @@ source WGSparams_Lump.txt
 ##Go to the vcf
 cd $projdir/phased
 
+#load modules
 module load vcftools
 
+#get alfs
 cat ../sets/Lumpfishpoplist.txt | parallel --jobs 32 '
  vcftools --gzvcf Cyclopterus_lumpus_sizechecked_phased_chromchange.vcf.gz \
  --keep ../sets/Groupfiles/Lumpfish_inds_{}.tsv \
  --freq \
  --out Cyclopterus_lumpus_sizechecked_phased_chromchange_{} '
+
+#to do
+#Compare VCF alfs with ANGSD alfs
